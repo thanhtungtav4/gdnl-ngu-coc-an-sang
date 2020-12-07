@@ -289,27 +289,59 @@ nav a{
     font-family: Montserrat;
     font-weight: 500;
 }
-.btn-shopping,.btn-shopping-1 ,.btn-shopping-2 ,.btn-shopping-3 {
+/*.btn-shopping,.btn-shopping-1 ,.btn-shopping-2 ,.btn-shopping-3 {*/
+/*    position: fixed;*/
+/*    right: 38px;*/
+/*    opacity: 1;*/
+/*    z-index: 900;*/
+/*}*/
+/*.btn-shopping{*/
+/*    bottom: 35%;*/
+/*}*/
+/*.btn-shopping-1{*/
+/*    bottom: 62%;*/
+/*    position: fixed;*/
+/*    right: 38px;*/
+/*}*/
+/*.btn-shopping-2{*/
+/*    bottom: 75%;*/
+/*    position: fixed;*/
+/*    right: 38px;*/
+/*}*/
+/*.btn-shopping-3{*/
+/*    bottom: 50%;*/
+/*    position: fixed;*/
+/*    right: 38px;*/
+/*}*/
+.btn-shopping,.btn-shopping-1 ,.btn-shopping-2 ,.btn-shopping-3 , .btn-shopping-4 {
     position: fixed;
     right: 38px;
     opacity: 1;
     z-index: 900;
 }
 .btn-shopping{
-    bottom: 35%;
+    /*bottom: 35%;*/
+    bottom: 20%;
 }
 .btn-shopping-1{
-    bottom: 62%;
+    bottom: 49%;
     position: fixed;
     right: 38px;
 }
 .btn-shopping-2{
-    bottom: 75%;
+    bottom: 63%;
     position: fixed;
     right: 38px;
 }
 .btn-shopping-3{
-    bottom: 50%;
+    /*bottom: 50%;*/
+    bottom: 35%;
+    position: fixed;
+    right: 38px;
+}
+
+.btn-shopping-4{
+    bottom: 76%;
     position: fixed;
     right: 38px;
 }
@@ -455,7 +487,7 @@ a:not([href]) {
     .nav-tabs {
         border-bottom: unset;
     }
-    .btn-shopping ,.btn-shopping-2 , .btn-shopping-1, .btn-shopping-3 {
+    .btn-shopping ,.btn-shopping-2 , .btn-shopping-1, .btn-shopping-3 , .btn-shopping-4 {
         right: 12px;
     }
     .nt-btn-local{
@@ -542,20 +574,45 @@ a:not([href]) {
     .box-bg-left , .box-bg-right{
         opacity: 0.8;
     }
-    .btn-shopping ,.btn-shopping-2 , .btn-shopping-1, .btn-shopping-3 {
+    /*.btn-shopping ,.btn-shopping-2 , .btn-shopping-1, .btn-shopping-3 {*/
+    /*    right: 15px;*/
+    /*}*/
+    /*.btn-shopping {*/
+    /*    bottom: 32%;*/
+    /*}*/
+    /*.btn-shopping-3 {*/
+    /*    bottom: 45%;*/
+    /*}*/
+    /*.btn-shopping-1 {*/
+    /*    bottom: 57%;*/
+    /*}*/
+    /*.btn-shopping-2 {*/
+    /*    bottom: 70%;*/
+    /*}*/
+
+    .btn-shopping ,.btn-shopping-2 , .btn-shopping-1, .btn-shopping-3 , .btn-shopping-4 {
         right: 15px;
     }
     .btn-shopping {
-        bottom: 32%;
+        /*bottom: 32%;*/
+        bottom: 15%;
     }
     .btn-shopping-3 {
-        bottom: 45%;
+        /*bottom: 45%;*/
+        bottom: 29%;
     }
     .btn-shopping-1 {
-        bottom: 57%;
+        /*bottom: 57%;*/
+        bottom: 42%;
     }
     .btn-shopping-2 {
-        bottom: 70%;
+        /*bottom: 70%;*/
+        bottom: 54%;
+    }
+
+    .btn-shopping-4 {
+        /*bottom: 83%;*/
+        bottom: 67%;
     }
 }
 @media (max-width: 700px) {

@@ -2,3 +2,24 @@
     background-image: url("../images/doi-ve/background.png");
     background-size:  100% 100%;
 }
+
+.background-1 {
+    background-image: url("../images/doi-ve/background_group_1.png");
+    background-size:  100% 100%;
+}
+
+.background-2 {
+    background-image: url("../images/doi-ve/background_2.png");
+    background-size:  100% ;
+    background-repeat: repeat;
+}
+.margin-top-group-1 {
+    margin-top: -13%;
+}
+
+.margin-top-text {
+    margin-top: -7%;
+}
+.background-3 {
+    background: #000;
+}

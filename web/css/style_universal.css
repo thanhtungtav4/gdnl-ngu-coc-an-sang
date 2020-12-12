@@ -1,0 +1,120 @@
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Medium.txt') format('woff2'),
+    url('../fonts/Oswald-Medium-1.txt') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: Oswald;
+}
+.main-body-fitnesse{
+    background-image: url("../images/universal/background.png");
+    background-size:  100% 100%;
+}
+
+.background-2 {
+    background-image: url("../images/universal/background_2.png");
+    background-size:  100%;
+    background-repeat: repeat;
+}
+.mt-top {
+    margin-top: -20px;
+}
+
+.mt-top-50 {
+    margin-top: -50px;
+}
+.text_prize {
+    color: #F4E434;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.height_scroll {
+    max-height: 420px;
+    overflow-y: scroll;
+}
+.btn-popup:hover {
+    cursor: pointer;
+}
+.close:focus {
+    outline: 0;
+}
+.modal-body {
+    background: #5DC0ED;
+    border:0;
+    padding-top: 30px;
+}
+.fix_image{
+    position: absolute;
+    z-index: 9;
+    top: 3%;
+    left: 2%;
+}
+
+/* width */
+.modal-body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.modal-body::-webkit-scrollbar-track {
+    background:#000;
+}
+
+/* Handle */
+.modal-body::-webkit-scrollbar-thumb {
+    background: #F4E434;
+}
+
+#the-le p , #the-le table td, #the-le table th{
+    font-size: 11px;
+    margin-bottom: 0.5rem !important;
+}
+.text_prize {
+    margin-bottom: 0.5rem;
+}
+.text_1 {
+    font-size: 9px;
+    padding-top: 10px;
+}
+.text_2{
+    font-size: 6px;
+    margin-bottom: 0.5rem;
+}
+.text_3{
+    font-size: 10px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+@media (max-width: 992px) {
+    .mt-top-50 {
+        margin-top: 0;
+    }
+    .text_prize {
+        font-size: 16px;
+    }
+    .fix_image{
+        top: 6%;
+    }
+    .img_close{
+        width: 40% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .mt-top {
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 568px) {
+    .text_prize {
+        font-size: 12px;
+    }
+    .fix_image{
+        top: 5%;
+    }
+}

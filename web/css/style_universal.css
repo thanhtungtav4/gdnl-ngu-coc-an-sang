@@ -1,11 +1,23 @@
 
 @font-face {
-    font-family: 'Oswald';
-    src: url('../fonts/Oswald-Medium.txt') format('woff2'),
-    url('../fonts/Oswald-Medium-1.txt') format('woff');
+    font-family: 'RF-AmsiProCond-Ultra';
+    src: url('../fonts/RF-AmsiProCond-Ultra.ttf');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
+}
+@font-face {
+    font-family: 'RF-AmsiProNarw-Bold';
+    src: url('../fonts/RF-AmsiProNarw-Bold.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.text_1 {
+    font-family: RF-AmsiProNarw-Bold;
+}
+.text_3 {
+    font-family: RF-AmsiProCond-Ultra;
 }
 body{
     font-family: Oswald;

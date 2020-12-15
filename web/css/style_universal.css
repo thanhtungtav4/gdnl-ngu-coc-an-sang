@@ -127,6 +127,9 @@ body{
 #the-le p, #the-le table td, #the-le table th {
     font-size: 14px;
 }
+.nav-link {
+    border: 1px solid transparent !important;
+}
 @media (max-width: 768px) {
     .mt-top {
         margin-top: -10px;

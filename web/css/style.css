@@ -437,6 +437,16 @@ a:not([href]) {
 .magin-top-4rem{
     margin-top: 4rem !important;
 }
+/*.main-body-uno{*/
+/*    background-color: #ffdb3c;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+.main-trans{
+    background-image: url("../images/bg-trans.png");
+    background-position: center;
+    background-size: cover;
+}
 @media (min-width: 1836px) {
     .box-bg-right {
         top: -53%;

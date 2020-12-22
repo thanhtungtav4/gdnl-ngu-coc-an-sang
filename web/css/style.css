@@ -480,6 +480,10 @@ a:not([href]) {
 .uno-game-control-top{
     top:-3rem;
 }
+.text-reg-uno{
+    font-weight: bolder;
+    font-family: Myria;
+}
 @media (min-width: 1836px) {
     .box-bg-right {
         top: -53%;

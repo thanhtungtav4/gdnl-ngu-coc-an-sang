@@ -470,6 +470,9 @@ a:not([href]) {
 .control-text-uno{
     margin-top: 25vh;
 }
+.uno-game-control-top{
+    top:-3rem;
+}
 @media (min-width: 1836px) {
     .box-bg-right {
         top: -53%;
@@ -669,6 +672,19 @@ a:not([href]) {
         right: -11px;
         top: -20px;
     }
+    .nt-right-hoa {
+        right: 6rem;
+    }
+    .control-text-uno {
+        margin-top: 19vh;
+    }
+    a .w-55{
+        width: 45px;
+    }
+    .btn-shopping, .btn-shopping-2, .btn-shopping-1, .btn-shopping-3, .btn-shopping-4 {
+        right: 10px;
+    }
+
 }
 @media (max-width: 625px) {
     .box-change-list-left {
@@ -690,6 +706,9 @@ a:not([href]) {
     }
     .box-bg-left , .box-bg-right{
         opacity: 0.6;
+    }
+    .control-text-uno {
+        margin-top: 13vh;
     }
 }
 @media (max-width: 579px) {
@@ -718,6 +737,18 @@ a:not([href]) {
         left: -12%;
         width: 33%;
         top: 71%;
+    }
+}
+@media (max-width: 460px) {
+    .nt-right-hoa {
+        right: 4.5rem;
+    }
+    .control-text-uno {
+        margin-top: 9vh;
+    }
+    .nt-left-hoa {
+        top: -2vh;
+        max-width: 40%;
     }
 }
 @media (max-width: 405px) {

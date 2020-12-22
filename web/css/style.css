@@ -467,6 +467,13 @@ a:not([href]) {
 .box-index-on{
     z-index: 99;
 }
+.get-gift-uni{
+    background-image: url("../images/bg-uni-2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -2rem;
+}
 .control-text-uno{
     margin-top: 25vh;
 }

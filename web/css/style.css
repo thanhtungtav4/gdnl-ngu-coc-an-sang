@@ -447,6 +447,29 @@ a:not([href]) {
     background-position: center;
     background-size: cover;
 }
+.bg-top-1{
+    background-image: url("../images/bg_top_home.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nt-right-hoa{
+    right: 10rem;
+    width: 22%;
+    top: 4vh;
+    z-index: 1;
+}
+.nt-left-hoa{
+    top: -4vh;
+    left: 0;
+    z-index: 1;
+}
+.box-index-on{
+    z-index: 99;
+}
+.control-text-uno{
+    margin-top: 25vh;
+}
 @media (min-width: 1836px) {
     .box-bg-right {
         top: -53%;
@@ -464,6 +487,9 @@ a:not([href]) {
     }
     .box-bg-left {
         top: -43%;
+    }
+    .nt-left-hoa {
+        top: -9vh;
     }
 
 }

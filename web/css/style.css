@@ -470,7 +470,7 @@ a:not([href]) {
 .get-gift-uni{
     background-image: url("../images/bg-uni-2.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     margin-top: -2rem;
 }

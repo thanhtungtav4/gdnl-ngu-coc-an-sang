@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900&amp;subset=vietnamese');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @font-face {
     font-family: 'Oswald';
     src: url('../fonts/Oswald-Medium.txt') format('woff2'),
@@ -511,6 +512,10 @@ a:not([href]) {
     background-color: #f0552b;
     color: white;
 }
+.bg-white-uno .nav-link {
+    font-family: Roboto;
+    font-weight: normal;
+}
 
 .bg-white-uno  .nav-tabs{
     border-bottom:unset;
@@ -858,5 +863,8 @@ a:not([href]) {
     }
 }
 @media (max-width: 380px) {
-
+    .bg-white-uno .nav-link {
+        display: block;
+        padding: 6px 2px;
+    }
 }

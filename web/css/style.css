@@ -510,6 +510,7 @@ a:not([href]) {
     max-width: 30%;
     float: right;
 }
+
 @media (min-width: 1836px) {
     .box-bg-right {
         top: -53%;
@@ -533,6 +534,10 @@ a:not([href]) {
     }
     .get-gift-uni{
         background-size: 100% 588px;
+    }
+    .custome-local-css{
+        position: relative;
+        top: -7rem;
     }
 
 }

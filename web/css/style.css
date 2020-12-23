@@ -499,6 +499,9 @@ a:not([href]) {
     padding: 2rem;
     border-radius: 10px
 }
+.main-trans p , .main-trans  .minions-strong{
+    color: #000000;
+}
 .bg-white-uno .nav-tabs .nav-item.show .nav-link, .bg-white-uno .nav-tabs .nav-link.active,.bg-white-uno .nav-tabs .nav-link:hover {
     color: black;
     background-color: #f9d523;
@@ -567,6 +570,9 @@ a:not([href]) {
     .custome-local-css{
         position: relative;
         top: -7rem;
+    }
+    .main-body-uno .day-to-day {
+        font-size: 1.2rem;
     }
 
 }

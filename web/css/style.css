@@ -458,11 +458,9 @@ a:not([href]) {
 .magin-top-4rem{
     margin-top: 4rem !important;
 }
-/*.main-body-uno{*/
-/*    background-color: #ffdb3c;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
+.cursor{
+    cursor: pointer;
+}
 .main-trans{
     background-image: url("../images/bg-trans.jpg");
     background-position: center;

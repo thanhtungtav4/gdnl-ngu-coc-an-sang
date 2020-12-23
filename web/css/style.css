@@ -524,6 +524,9 @@ a:not([href]) {
 .bg-white-uno  .nav-tabs{
     border-bottom:unset;
 }
+.bg-white-uno .text-list-winner tr td{
+    font-family: Roboto;
+}
 .uno-game-control-top{
     top:-3rem;
 }
@@ -680,6 +683,10 @@ a:not([href]) {
         display: block;
         padding: 6px 10px;
     }
+    .caution-text-uno{
+        font-family: 'Roboto';
+        font-size: 13px;
+    }
     .bg-white-uno .custome-mobile-nav{
         margin-top: 10px;
     }
@@ -707,7 +714,7 @@ a:not([href]) {
         height: 20vh;
     }
     .w-40-custome{
-        width: 50%;
+        max-width: 50% !important;
     }
     .control-logo-mkd {
         top: 0.2rem;

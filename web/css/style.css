@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900&amp;subset=vietnamese');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @font-face {
     font-family: 'Oswald';
     src: url('../fonts/Oswald-Medium.txt') format('woff2'),
@@ -288,6 +288,9 @@ nav a{
 .text-step-1 p , .copyright{
     font-family: Montserrat;
     font-weight: 500;
+}
+.main-body-uno .day-to-day{
+    font-family: 'Oswald', sans-serif;
 }
 /*.btn-shopping,.btn-shopping-1 ,.btn-shopping-2 ,.btn-shopping-3 {*/
 /*    position: fixed;*/
@@ -670,22 +673,10 @@ a:not([href]) {
     .box-bg-left , .box-bg-right{
         opacity: 0.8;
     }
-    /*.btn-shopping ,.btn-shopping-2 , .btn-shopping-1, .btn-shopping-3 {*/
-    /*    right: 15px;*/
-    /*}*/
-    /*.btn-shopping {*/
-    /*    bottom: 32%;*/
-    /*}*/
-    /*.btn-shopping-3 {*/
-    /*    bottom: 45%;*/
-    /*}*/
-    /*.btn-shopping-1 {*/
-    /*    bottom: 57%;*/
-    /*}*/
-    /*.btn-shopping-2 {*/
-    /*    bottom: 70%;*/
-    /*}*/
-
+    .get-gift-uni{
+        background-image:unset;
+        }
+    }
     .btn-shopping ,.btn-shopping-2 , .btn-shopping-1, .btn-shopping-3 , .btn-shopping-4 {
         right: 15px;
     }
@@ -710,7 +701,7 @@ a:not([href]) {
         /*bottom: 83%;*/
         bottom: 67%;
     }
-}
+
 @media (max-width: 700px) {
     .magin-top-4rem {
         margin-top: 1rem !important;

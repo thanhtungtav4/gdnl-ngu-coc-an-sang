@@ -66,6 +66,10 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.custome-mkd-btn{
+    width: 80%;
+    float: left;
+}
 .whole-gain-img{
     height: 43px;
     margin: 7px;

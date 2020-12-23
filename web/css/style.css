@@ -491,6 +491,7 @@ a:not([href]) {
     background-color: #f0552b;
     color: white;
 }
+
 .bg-white-uno  .nav-tabs{
     border-bottom:unset;
 }
@@ -500,6 +501,10 @@ a:not([href]) {
 .text-reg-uno{
     font-weight: bolder;
     font-family: Myria;
+}
+.control-logo-mkd{
+    position: relative;
+    top: 3rem;
 }
 @media (min-width: 1836px) {
     .box-bg-right {

@@ -530,6 +530,10 @@ a:not([href]) {
 .uno-game-control-top{
     top:-3rem;
 }
+.bg-hoa-x2{
+    position: relative;
+    right: -15px;
+}
 .text-reg-uno{
     font-weight: bolder;
     font-family: Myria;
@@ -673,6 +677,9 @@ a:not([href]) {
     .whole-gain-img {
         height: 31px;
         width: auto;
+    }
+    .bg-hoa-x2{
+        max-width: 51%;
     }
     .custom-product-css{
         margin-top: 6rem;

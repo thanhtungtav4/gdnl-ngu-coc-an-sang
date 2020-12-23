@@ -68,7 +68,6 @@
 }
 .custome-mkd-btn{
     width: 80%;
-    float: left;
 }
 .whole-gain-img{
     height: 43px;
@@ -538,6 +537,9 @@ a:not([href]) {
     font-weight: bolder;
     font-family: Myria;
 }
+.custome-mkd-btn{
+    float: right;
+}
 .control-logo-mkd{
     position: relative;
     top: 3rem;
@@ -677,6 +679,9 @@ a:not([href]) {
     .whole-gain-img {
         height: 31px;
         width: auto;
+    }
+    .custome-mkd-btn{
+        float: left;
     }
     .bg-hoa-x2{
         max-width: 51%;

@@ -506,9 +506,21 @@ a:not([href]) {
     position: relative;
     top: 3rem;
 }
+.modal-body-x2{
+    background-color: #fff38d;
+    border-left: 5px solid #f0552b !important;
+    border-bottom: 5px solid #f0552b !important;
+    border-radius: 15px;
+    border: unset;
+}
 .bg-hoa-x2{
     max-width: 30%;
     float: right;
+}
+.modalx-2 {
+    width: 35px;
+    height: 35px;
+    top: -43px;
 }
 
 @media (min-width: 1836px) {

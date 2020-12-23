@@ -506,6 +506,10 @@ a:not([href]) {
     position: relative;
     top: 3rem;
 }
+.bg-hoa-x2{
+    max-width: 30%;
+    float: right;
+}
 @media (min-width: 1836px) {
     .box-bg-right {
         top: -53%;
@@ -526,6 +530,9 @@ a:not([href]) {
     }
     .nt-left-hoa {
         top: -9vh;
+    }
+    .get-gift-uni{
+        background-size: 100% 588px;
     }
 
 }

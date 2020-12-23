@@ -477,6 +477,23 @@ a:not([href]) {
 .control-text-uno{
     margin-top: 25vh;
 }
+.bg-white-uno{
+    background: white;
+    padding: 2rem;
+    border-radius: 10px
+}
+.bg-white-uno .nav-tabs .nav-item.show .nav-link, .bg-white-uno .nav-tabs .nav-link.active,.bg-white-uno .nav-tabs .nav-link:hover {
+    color: black;
+    background-color: #f9d523;
+    border: unset;
+}
+.bg-white-uno  .nav-item{
+    background-color: #f0552b;
+    color: white;
+}
+.bg-white-uno  .nav-tabs{
+    border-bottom:unset;
+}
 .uno-game-control-top{
     top:-3rem;
 }

@@ -667,11 +667,15 @@ a:not([href]) {
     .h-25-nt {
         height: 100px;
     }
+
 }
 @media (max-width: 768px) {
     .whole-gain-img {
         height: 31px;
         width: auto;
+    }
+    .custom-product-css{
+        margin-top: 6rem;
     }
     .bg-white-uno .nav-tabs .nav-item.show .nav-link, .bg-white-uno .nav-tabs .nav-link.active, .bg-white-uno .nav-tabs .nav-link:hover, .nav-item {
         font-size: 9px;
@@ -686,6 +690,12 @@ a:not([href]) {
     .caution-text-uno{
         font-family: 'Roboto';
         font-size: 13px;
+    }
+    .uno-game-control-top{
+        top: -1rem;
+    }
+    .product-uno-control{
+        width: 80%;
     }
     .bg-white-uno .custome-mobile-nav{
         margin-top: 10px;
@@ -775,6 +785,9 @@ a:not([href]) {
     .magin-top-4rem {
         margin-top: 1rem !important;
     }
+    .css-control-btn-pro{
+        max-width: 60% ;
+    }
 }
 @media (max-width: 675px) {
     .box-change-list-left {
@@ -813,6 +826,9 @@ a:not([href]) {
         right: -24%;
         top: -68%;
         width: 24%;
+    }
+    .css-control-btn-pro{
+        max-width: 70% !important;
     }
 }
 @media (max-width: 583px) {
@@ -877,5 +893,10 @@ a:not([href]) {
     .bg-white-uno .nav-link {
         display: block;
         padding: 6px 2px;
+    }
+}
+@media (max-width: 340px) {
+    .custom-product-css{
+        margin-top: 7rem;
     }
 }

@@ -464,7 +464,7 @@ a:not([href]) {
 /*    background-size: cover;*/
 /*}*/
 .main-trans{
-    background-image: url("../images/bg-trans.png");
+    background-image: url("../images/bg-trans.jpg");
     background-position: center;
     background-size: cover;
 }

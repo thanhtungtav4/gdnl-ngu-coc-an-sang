@@ -465,6 +465,7 @@ a:not([href]) {
     background-image: url("../images/bg-trans.jpg");
     background-position: center;
     background-size: cover;
+    background-color: #f6ce39;
 }
 .bg-top-1{
     background-image: url("../images/bg_top_home.png");

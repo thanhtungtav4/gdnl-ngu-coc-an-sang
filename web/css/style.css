@@ -473,6 +473,14 @@ a:not([href]) {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.nt-c::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
 .nt-right-hoa{
     right: 10rem;
     width: 22%;

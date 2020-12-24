@@ -522,6 +522,12 @@ a:not([href]) {
     background-color: #f0552b;
     color: white;
 }
+.bg-transparent-uno{
+    background-image: url(../images/bg_top_home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .bg-white-uno .nav-link {
     font-family: Roboto;
     font-weight: normal;
@@ -535,6 +541,10 @@ a:not([href]) {
 }
 .uno-game-control-top{
     top:-3rem;
+}
+.view-rule-uno{
+    max-width: 268px;
+    height: auto;
 }
 .bg-hoa-x2{
     position: relative;
@@ -687,6 +697,10 @@ a:not([href]) {
         height: 31px;
         width: auto;
     }
+    .btn-time-km-uno{
+        height: 50px;
+        width: auto;
+    }
     .custome-mkd-btn{
         float: left;
     }
@@ -696,6 +710,10 @@ a:not([href]) {
     .custom-product-css{
         margin-top: 6rem;
     }
+    .view-rule-uno{
+        width: 75%;
+    }
+
     .bg-white-uno .nav-tabs .nav-item.show .nav-link, .bg-white-uno .nav-tabs .nav-link.active, .bg-white-uno .nav-tabs .nav-link:hover, .nav-item {
         font-size: 9px;
     }

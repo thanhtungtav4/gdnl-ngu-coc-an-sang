@@ -1,1 +1,49 @@
-$(window).on("load",function(e){wow=new WOW({animateClass:"animated",offset:100,callback:function(e){console.log("WOW: animating <"+e.tagName.toLowerCase()+">")}}),wow.init()}),$(document).ready(function(e){e("#cssmenu").menumaker({format:"multitoggle"}),0<e(".btn-searchsg").length&&e(".btn-searchsg").click(function(){return e(".frm-search-1").hasClass("active")?void e(".frm-search-1").removeClass("active"):(e(".frm-search-1").addClass("active"),!1)}),setTimeout(function(){e(".loading").fadeOut(300,function(){e(this).remove()})},800),e(".scroll-danhsach").click(function(){e("body,html").animate({scrollTop:e(".scroll").offset().top},800)})}),$(document).click(function(){$(".a").removeClass("active"),$(".a").removeClass("show"),$("#a").removeClass("normal")}),$(".list-cata, .btn-menu, #link-search,.frm-search,.frm-search-1, .layer-menu, .btn-action").click(function(e){e.stopPropagation()}),function(o){o.fn.menumaker=function(e){var t=o(this),n=o.extend({format:"dropdown",sticky:!1},e);return this.each(function(){return o(this).find(".button").on("click",function(){o(this).toggleClass("menu-opened");var e=o(this).next("ul");e.hasClass("open")?e.slideToggle().removeClass("open"):(e.slideToggle().addClass("open"),"dropdown"===n.format&&e.find("ul").show())}),t.find("li ul").parent().addClass("has-sub"),multiTg=function(){t.find(".has-sub").prepend('<span class="submenu-button"></span>'),t.find(".submenu-button").on("click",function(){o(this).toggleClass("submenu-opened"),o(this).siblings("ul").hasClass("open")?o(this).siblings("ul").removeClass("open").slideToggle():o(this).siblings("ul").addClass("open").slideToggle()})},"multitoggle"===n.format?multiTg():t.addClass("dropdown"),!0===n.sticky&&t.css("position","fixed"),resizeFix=function(){1e3<o(window).width()&&t.find("ul").show(),o(window).width()<=1e3&&t.find("ul").hide().removeClass("open")},resizeFix(),o(window).on("resize",resizeFix)})}}(jQuery);var pictureSrc="images/dao.png",pictureSrc_2nd="images/mai.png",pictureWidth=25,pictureHeight=25,numFlakes=10,downSpeed=.01,lrFlakes=10;("number"!=typeof numFlakes||Math.round(numFlakes)!=numFlakes||numFlakes<1)&&(numFlakes=10);for(var x=0;x<numFlakes;x++)x%2==0?document.layers?document.write('<layer id="snFlkDiv'+x+'"><imgsrc="'+pictureSrc+'" height="'+pictureHeight+'"width="'+pictureWidth+'" border="0"></layer>'):document.write('<div style="position:absolute;"id="snFlkDiv'+x+'"><img src="'+pictureSrc+'"height="'+pictureHeight+'" width="'+pictureWidth+'" border="0"></div>'):document.layers?document.write('<layer id="snFlkDiv'+x+'"><imgsrc="'+pictureSrc_2nd+'" height="'+pictureHeight+'"width="'+pictureWidth+'" border="0"></layer>'):document.write('<div style="position:absolute;"id="snFlkDiv'+x+'"><img src="'+pictureSrc_2nd+'"height="'+pictureHeight+'" width="'+pictureWidth+'" border="0"></div>');for(var snFlkTemp,xcoords=new Array,ycoords=new Array,x=0;x<numFlakes;x++){for(xcoords[x]=(x+1)/(numFlakes+1);snFlkTemp=Math.round((numFlakes-1)*Math.random()),"number"==typeof ycoords[snFlkTemp];);ycoords[snFlkTemp]=x/numFlakes}function flakeFall(){if(getRefToDivNest("snFlkDiv0")){var e=0,t=0,n=0,o=0;"number"==typeof window.innerWidth?(e=window.innerWidth,t=window.innerHeight):document.documentElement&&(document.documentElement.clientWidth||document.documentElement.clientHeight)?(e=document.documentElement.clientWidth,t=document.documentElement.clientHeight):document.body&&(document.body.clientWidth||document.body.clientHeight)&&(e=document.body.clientWidth,t=document.body.clientHeight),"number"==typeof window.pageYOffset?(n=pageYOffset,o=pageXOffset):document.body&&(document.body.scrollLeft||document.body.scrollTop)?(n=document.body.scrollTop,o=document.body.scrollLeft):document.documentElement&&(document.documentElement.scrollLeft||document.documentElement.scrollTop)&&(n=document.documentElement.scrollTop,o=document.documentElement.scrollLeft);for(var i=0;i<numFlakes;i++){ycoords[i]*t>t-pictureHeight&&(ycoords[i]=0);var s=getRefToDivNest("snFlkDiv"+i);if(!s)return;s.style&&(s=s.style);var d=document.childNodes?"px":0;s.top=Math.round(ycoords[i]*t)+n+d,s.left=Math.round(xcoords[i]*e-pictureWidth/2+e/(4*(numFlakes+1))*(Math.sin(lrFlakes*ycoords[i])-Math.sin(3*lrFlakes*ycoords[i])))+o+d,ycoords[i]+=downSpeed}}}function getRefToDivNest(e){return document.layers?document.layers[e]:document[e]?document[e]:document.getElementById?document.getElementById(e):!!document.all&&document.all[e]}window.setInterval("flakeFall();",100);
+$(window).on("load", function(e) {
+    wow = new WOW({
+        animateClass: "animated",
+        offset: 100,
+        callback: function(e) {
+            console.log("WOW: animating <" + e.tagName.toLowerCase() + ">")
+        }
+    }), wow.init()
+}), $(document).ready(function(e) {
+    e("#cssmenu").menumaker({
+        format: "multitoggle"
+    }), 0 < e(".btn-searchsg").length && e(".btn-searchsg").click(function() {
+        return e(".frm-search-1").hasClass("active") ? void e(".frm-search-1").removeClass("active") : (e(".frm-search-1").addClass("active"), !1)
+    }), setTimeout(function() {
+        e(".loading").fadeOut(300, function() {
+            e(this).remove()
+        })
+    }, 800), e(".scroll-danhsach").click(function() {
+        e("body,html").animate({
+            scrollTop: e(".scroll").offset().top
+        }, 800)
+    })
+}), $(document).click(function() {
+    $(".a").removeClass("active"), $(".a").removeClass("show"), $("#a").removeClass("normal")
+}), $(".list-cata, .btn-menu, #link-search,.frm-search,.frm-search-1, .layer-menu, .btn-action").click(function(e) {
+    e.stopPropagation()
+}),
+    function(o) {
+        o.fn.menumaker = function(e) {
+            var t = o(this),
+                n = o.extend({
+                    format: "dropdown",
+                    sticky: !1
+                }, e);
+            return this.each(function() {
+                return o(this).find(".button").on("click", function() {
+                    o(this).toggleClass("menu-opened");
+                    var e = o(this).next("ul");
+                    e.hasClass("open") ? e.slideToggle().removeClass("open") : (e.slideToggle().addClass("open"), "dropdown" === n.format && e.find("ul").show())
+                }), t.find("li ul").parent().addClass("has-sub"), multiTg = function() {
+                    t.find(".has-sub").prepend('<span class="submenu-button"></span>'), t.find(".submenu-button").on("click", function() {
+                        o(this).toggleClass("submenu-opened"), o(this).siblings("ul").hasClass("open") ? o(this).siblings("ul").removeClass("open").slideToggle() : o(this).siblings("ul").addClass("open").slideToggle()
+                    })
+                }, "multitoggle" === n.format ? multiTg() : t.addClass("dropdown"), !0 === n.sticky && t.css("position", "fixed"), resizeFix = function() {
+                    1e3 < o(window).width() && t.find("ul").show(), o(window).width() <= 1e3 && t.find("ul").hide().removeClass("open")
+                }, resizeFix(), o(window).on("resize", resizeFix)
+            })
+        }
+    }(jQuery);

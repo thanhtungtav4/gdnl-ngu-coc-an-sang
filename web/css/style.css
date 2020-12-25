@@ -492,6 +492,9 @@ a:not([href]) {
     left: 0;
     z-index: 1;
 }
+.btn-custome-ntx{
+    z-index: 999;
+}
 .box-index-on{
     z-index: 99;
 }

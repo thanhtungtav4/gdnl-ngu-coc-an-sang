@@ -104,7 +104,7 @@
     <div class="main-trans">
       <!-- bg 1-->
       <div class="bg-top-1">
-        <div class="container">
+        <div class="container btn-custome-ntx">
           <div class="col-12 col-md-10 offset-md-1 offset-0 mx-auto pt-md-3">
             <div class="row">
               <div class="col-4 text-center mx-auto">
@@ -1474,6 +1474,42 @@
 <script type="text/javascript" src="js\start.js"></script>
 <script>
   new WOW().init();
+  var pictureSrc = "images/dao.png",
+          pictureSrc_2nd = "images/mai.png",
+          pictureWidth = 25,
+          pictureHeight = 25,
+          numFlakes = 10,
+          downSpeed = .01,
+          lrFlakes = 10;
+  ("number" != typeof numFlakes || Math.round(numFlakes) != numFlakes || numFlakes < 1) && (numFlakes = 10);
+  for (var x = 0; x < numFlakes; x++) x % 2 == 0 ? document.layers ? document.write('<layer id="snFlkDiv' + x + '"><imgsrc="' + pictureSrc + '" height="' + pictureHeight + '"width="' + pictureWidth + '" border="0"></layer>') : document.write('<div style="position:absolute;"id="snFlkDiv' + x + '"><img src="' + pictureSrc + '"height="' + pictureHeight + '" width="' + pictureWidth + '" border="0"></div>') : document.layers ? document.write('<layer id="snFlkDiv' + x + '"><imgsrc="' + pictureSrc_2nd + '" height="' + pictureHeight + '"width="' + pictureWidth + '" border="0"></layer>') : document.write('<div style="position:absolute;"id="snFlkDiv' + x + '"><img src="' + pictureSrc_2nd + '"height="' + pictureHeight + '" width="' + pictureWidth + '" border="0"></div>');
+  for (var snFlkTemp, xcoords = new Array, ycoords = new Array, x = 0; x < numFlakes; x++) {
+    for (xcoords[x] = (x + 1) / (numFlakes + 1); snFlkTemp = Math.round((numFlakes - 1) * Math.random()), "number" == typeof ycoords[snFlkTemp];);
+    ycoords[snFlkTemp] = x / numFlakes
+  }
+
+  function flakeFall() {
+    if (getRefToDivNest("snFlkDiv0")) {
+      var e = 0,
+              t = 0,
+              n = 0,
+              o = 0;
+      "number" == typeof window.innerWidth ? (e = window.innerWidth, t = window.innerHeight) : document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight) ? (e = document.documentElement.clientWidth, t = document.documentElement.clientHeight) : document.body && (document.body.clientWidth || document.body.clientHeight) && (e = document.body.clientWidth, t = document.body.clientHeight), "number" == typeof window.pageYOffset ? (n = pageYOffset, o = pageXOffset) : document.body && (document.body.scrollLeft || document.body.scrollTop) ? (n = document.body.scrollTop, o = document.body.scrollLeft) : document.documentElement && (document.documentElement.scrollLeft || document.documentElement.scrollTop) && (n = document.documentElement.scrollTop, o = document.documentElement.scrollLeft);
+      for (var i = 0; i < numFlakes; i++) {
+        ycoords[i] * t > t - pictureHeight && (ycoords[i] = 0);
+        var s = getRefToDivNest("snFlkDiv" + i);
+        if (!s) return;
+        s.style && (s = s.style);
+        var d = document.childNodes ? "px" : 0;
+        s.top = Math.round(ycoords[i] * t) + n + d, s.left = Math.round(xcoords[i] * e - pictureWidth / 2 + e / (4 * (numFlakes + 1)) * (Math.sin(lrFlakes * ycoords[i]) - Math.sin(3 * lrFlakes * ycoords[i]))) + o + d, ycoords[i] += downSpeed
+      }
+    }
+  }
+
+  function getRefToDivNest(e) {
+    return document.layers ? document.layers[e] : document[e] ? document[e] : document.getElementById ? document.getElementById(e) : !!document.all && document.all[e]
+  }
+  window.setInterval("flakeFall();", 100);
 </script>
 </body>
 </head>

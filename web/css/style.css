@@ -516,6 +516,9 @@ a:not([href]) {
 .main-trans p , .main-trans  .minions-strong{
     color: #000000;
 }
+.bg-white-uno .set-height-table {
+    max-height: 140px;
+}
 .bg-white-uno .nav-tabs .nav-item.show .nav-link, .bg-white-uno .nav-tabs .nav-link.active,.bg-white-uno .nav-tabs .nav-link:hover {
     color: black;
     background-color: #f9d523;
